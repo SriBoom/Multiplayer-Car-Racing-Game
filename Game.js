@@ -92,12 +92,12 @@ class Game {
       player.update();
     }
 
-    if(player.distance > 6000){
+    if(player.distance > 4110){
       gameState = 2;
       player.rank+=1;
       Player.updateCarsAtEnd(player.rank);
-      text("Rank: "+player.rank, 300, 300);
-    }
+      text("Your Rank: "+player.rank,displayWidth/2-50,y-120);  
+      }
    
     drawSprites();
   }
